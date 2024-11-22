@@ -2,13 +2,14 @@
 <meta http-equiv="refresh" content="30">
 <html>
 <head>
-  <title>Mtro Times</title>
+  <title>Metro Times</title>
 </head>
 <body>
   <p id="currentDate"></p>
   <script>
     let today = new Date();
-    document.getElementById("currentDate").textContent = today.toLocaleDateString();
+    let formattedDate = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2) + ' ' + today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+    document.getElementById("currentDate").textContent = formattedDate;
   </script>
 </body>
 </html>
