@@ -11,5 +11,21 @@
     let formattedDate = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2) + ' ' + today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
     document.getElementById("currentDate").textContent = formattedDate;
   </script>
+<!--
+  <script>
+  fetch('')
+    .then(res => {
+    return res.json();
+  })
+  .then(data => {
+    data.forEach(user => {
+      const markup = `<li>${user.name}</li>`;
+
+      document.querySeklector('ul').insertAdjacentHTML('beforeend', markup);
+    });
+  })
+  .catch(error => console.log(error));
+</script>
+-->
 </body>
 </html>
